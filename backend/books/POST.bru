@@ -1,0 +1,19 @@
+meta {
+  name: POST
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/books
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Blue Nights",
+    "author": "Joan Didion",
+    "publishedYear": "2011"
+  }
+}

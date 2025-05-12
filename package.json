@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "concurrently": "^9.1.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run dev --prefix backend\" \"npm start --prefix frontend\""
+  },
+  "proxy": "http://localhost:8000",
+  "dependencies": {
+    "react-router-dom": "^7.6.0"
+  }
+}
